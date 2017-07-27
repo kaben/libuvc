@@ -43,6 +43,9 @@ include_directories(
   ${libuvc_BINARY_DIR}/include
   ${LIBUSB_INCLUDE_DIRS}
 )
+link_directories(
+  ${LIBUSB_LIBRARY_DIRS}
+)
 
 if(JPEG_FOUND)
   message(STATUS "Building libuvc with JPEG support.")
